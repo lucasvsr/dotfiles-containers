@@ -1,0 +1,29 @@
+[https]
+	postBuffer = 1048576000
+
+[core]
+	autocrlf = input
+
+[http]
+	sslverify = "false"
+
+[init]
+	defaultBranch = "main"
+
+[merge]
+	conflictStyle = "diff3"
+
+[pull]
+	rebase = "true"
+
+[user]
+	name = "Lucas Vinícius Silva Ribeiro"
+
+[commit]
+	gpgSign = true
+
+[tag]
+	gpgSign = true
+
+[gpg]
+	program = "/usr/bin/gpg"
