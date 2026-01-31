@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "script",
-        "git"
+        "git",
+        "fish"
     ]
 }
