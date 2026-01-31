@@ -28,4 +28,7 @@ for item in "$DOTFILES_DIR"/config/*; do
   ln -sf "$item" "$HOME/.config/$name"
 done
 
+echo "[dotfiles] Apagando config padrão do git"
+rm -rf "$HOME/.gitconfig"
+
 echo "[dotfiles] Instalação concluída!"
