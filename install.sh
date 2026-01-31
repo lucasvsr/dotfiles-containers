@@ -25,6 +25,7 @@ for item in "$DOTFILES_DIR"/config/*; do
   [[ -e "$item" ]] || continue
   name=$(basename "$item")
   echo "[dotfiles] Linkando $name -> ~/.config/$name"
+  rm -rf "$HOME/.config/$name"
   ln -sf "$item" "$HOME/.config/$name"
 done
 
