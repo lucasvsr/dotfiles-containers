@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "script",
         "git",
-        "fish"
+        "fish",
+        "home"
     ]
 }

@@ -5,18 +5,6 @@ echo "[dotfiles] Iniciando instalação..."
 
 DOTFILES_DIR="$(pwd)"
 
-# Lista de arquivos simples
-FILES=(
-  .bashrc
-  .zshrc
-  .gitconfig
-)
-
-for file in "${FILES[@]}"; do
-  echo "[dotfiles] Linkando $file"
-  ln -sf "$DOTFILES_DIR/$file" "$HOME/$file"
-done
-
 # Diretório .config: linka cada arquivo/diretório de config/ em ~/.config
 mkdir -p "$HOME/.config"
 
